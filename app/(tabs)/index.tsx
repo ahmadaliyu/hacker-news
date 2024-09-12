@@ -97,6 +97,7 @@ export default function HomeScreen() {
         }
       />
       <Text>Hello there!</Text>
+      <Text style={styles.news}>Latest news</Text>
 
       {isLoading && !refreshing && (
         <ActivityIndicator color={theme.colors.primary} />
@@ -148,5 +149,10 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     alignItems: "center",
     justifyContent: "center",
+  },
+  news: {
+    fontSize: 16,
+    marginVertical: 16,
+    fontFamily: "mB",
   },
 });
